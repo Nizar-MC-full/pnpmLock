@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/mdx': ^0.17.2
+  '@astrojs/mdx': ^0.19.0
   '@astrojs/prism': ^2.0.0
   '@astrojs/react': ^2.0.2
   '@astrojs/rss': ^2.1.1
@@ -45,7 +45,7 @@ specifiers:
   vite-plugin-svgr: ^2.2.2
 
 devDependencies:
-  '@astrojs/mdx': 0.17.2_astro@2.0.17
+  '@astrojs/mdx': 0.19.1_astro@2.0.17
   '@astrojs/prism': 2.0.0
   '@astrojs/react': 2.0.2_74b3ggvk3akyhuq4eydyx3fqim
   '@astrojs/rss': 2.1.1
@@ -63,7 +63,7 @@ devDependencies:
   '@types/prettier': 2.7.1
   '@types/react': 17.0.52
   '@types/react-dom': 17.0.18
-  '@uiw/react-codemirror': 4.13.2_j2evrivwfzdgwlskrcnfwd23wi
+  '@uiw/react-codemirror': 4.13.2_ai5dpkfsh6bew42tf7jao77pla
   '@vitejs/plugin-react': 2.2.0_vite@3.1.8
   astro: 2.0.17_ajklay5k626t46b6fyghkbup3i
   astro-compress: 1.1.35
@@ -239,7 +239,7 @@ packages:
     peerDependencies:
       astro: ^2.0.2
     dependencies:
-      '@astrojs/prism': 2.0.0
+      '@astrojs/prism': 2.1.1
       astro: 2.0.17_ajklay5k626t46b6fyghkbup3i
       github-slugger: 1.5.0
       import-meta-resolve: 2.1.0
@@ -257,12 +257,35 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/mdx/0.17.2_astro@2.0.17:
-    resolution: {integrity: sha512-mol57cw1jJMcQgKMRGn7p6cewajq6JTNtqj5aAZgROWam/phVDSOCbXj/WU3O9+3qFnyKtpczoufQKwJTQltAw==}
+  /@astrojs/markdown-remark/2.2.0_astro@2.0.17:
+    resolution: {integrity: sha512-4M1+GzQwDqF0KfX9Ahug43b0avorcK+iTapEaVuNnaCUVS6sZKRkztT3g6hmXiFmGHSL8qYaS9IVEmKtP6hYmw==}
+    peerDependencies:
+      astro: ^2.4.0
+    dependencies:
+      '@astrojs/prism': 2.1.1
+      astro: 2.0.17_ajklay5k626t46b6fyghkbup3i
+      github-slugger: 1.5.0
+      import-meta-resolve: 2.1.0
+      rehype-raw: 6.1.1
+      rehype-stringify: 9.0.3
+      remark-gfm: 3.0.1
+      remark-parse: 10.0.1
+      remark-rehype: 10.1.0
+      remark-smartypants: 2.0.0
+      shiki: 0.14.2
+      unified: 10.1.2
+      unist-util-visit: 4.1.1
+      vfile: 5.3.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@astrojs/mdx/0.19.1_astro@2.0.17:
+    resolution: {integrity: sha512-9GNNZbGT+lGvbRkQK/NaEJcnjj1T94/ne0KwPjJgNCBQrJuskX5IW1hKiE5bRSOFvkAOrBGneYKg0GXYArBOQQ==}
     engines: {node: '>=16.12.0'}
     dependencies:
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.17
-      '@astrojs/prism': 2.0.0
+      '@astrojs/markdown-remark': 2.2.0_astro@2.0.17
+      '@astrojs/prism': 2.1.1
       '@mdx-js/mdx': 2.3.0
       '@mdx-js/rollup': 2.3.0
       acorn: 8.8.1
@@ -275,7 +298,8 @@ packages:
       remark-frontmatter: 4.0.1
       remark-gfm: 3.0.1
       remark-smartypants: 2.0.0
-      shiki: 0.11.1
+      shiki: 0.14.2
+      source-map: 0.7.4
       unist-util-visit: 4.1.1
       vfile: 5.3.5
     transitivePeerDependencies:
@@ -286,6 +310,13 @@ packages:
 
   /@astrojs/prism/2.0.0:
     resolution: {integrity: sha512-YgeoeEPqsxaEpg0rwe/bUq3653LqSQnMjrLlpYwrbQQMQQqz6Y5yXN+RX3SfLJ6ppNb4+Fu2+Z49EXjk48Ihjw==}
+    engines: {node: '>=16.12.0'}
+    dependencies:
+      prismjs: 1.29.0
+    dev: true
+
+  /@astrojs/prism/2.1.1:
+    resolution: {integrity: sha512-Gnwnlb1lGJzCQEg89r4/WqgfCGPNFC7Kuh2D/k289Cbdi/2PD7Lrdstz86y1itDvcb2ijiRqjqWnJ5rsfu/QOA==}
     engines: {node: '>=16.12.0'}
     dependencies:
       prismjs: 1.29.0
@@ -609,8 +640,11 @@ packages:
     resolution: {integrity: sha512-Tbsj02wXCbqGmzdnXNk0SOF19ChhRU70BsroIi4Pm6Ehp56in6vch94mfbdQ17DozxkL3BAVjbZ4Qc1a0HFRAg==}
     dev: true
 
-  /@codemirror/autocomplete/6.3.0:
+  /@codemirror/autocomplete/6.3.0_ebfztrivxsawr3nzgdquexqq6q:
     resolution: {integrity: sha512-4jEvh3AjJZTDKazd10J6ZsCIqaYxDMCeua5ouQxY8hlFIml+nr7le0SgBhT3SIytFBmdzPK3AUhXGuW3T79nVg==}
+    peerDependencies:
+      '@codemirror/state': ^6.0.0
+      '@codemirror/view': ^6.0.0
     dependencies:
       '@codemirror/language': 6.3.0
       '@codemirror/state': 6.1.2
@@ -630,7 +664,7 @@ packages:
   /@codemirror/lang-javascript/6.1.1:
     resolution: {integrity: sha512-F4+kiuC5d5dUSJmff96tJQwpEXs/tX/4bapMRnZWW6bHKK1Fx6MunTzopkCUWRa9bF87GPmb9m7Qtg7Yv8f3uQ==}
     dependencies:
-      '@codemirror/autocomplete': 6.3.0
+      '@codemirror/autocomplete': 6.3.0_ebfztrivxsawr3nzgdquexqq6q
       '@codemirror/language': 6.3.0
       '@codemirror/lint': 6.0.0
       '@codemirror/state': 6.1.2
@@ -1480,10 +1514,14 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: true
 
-  /@uiw/codemirror-extensions-basic-setup/4.13.2:
+  /@uiw/codemirror-extensions-basic-setup/4.13.2_taect3vlcl4b4hfcnqjzfij36u:
     resolution: {integrity: sha512-ATJA7WaZ5g7/0teNBQRIalK3RxfU9X7hviwh6BOelaeJrJjkY6x+jVaACYywP1GStsIKcjNCumakpmRPO9w4sQ==}
+    peerDependencies:
+      '@codemirror/lint': '>=6.0.0'
+      '@codemirror/state': '>=6.0.0'
+      '@codemirror/view': '>=6.0.0'
     dependencies:
-      '@codemirror/autocomplete': 6.3.0
+      '@codemirror/autocomplete': 6.3.0_ebfztrivxsawr3nzgdquexqq6q
       '@codemirror/commands': 6.1.2
       '@codemirror/language': 6.3.0
       '@codemirror/lint': 6.0.0
@@ -1492,9 +1530,10 @@ packages:
       '@codemirror/view': 6.4.0
     dev: true
 
-  /@uiw/react-codemirror/4.13.2_j2evrivwfzdgwlskrcnfwd23wi:
+  /@uiw/react-codemirror/4.13.2_ai5dpkfsh6bew42tf7jao77pla:
     resolution: {integrity: sha512-sMfb8F82yLSqyq1gEUlr14E4KGXDfvsCnkGLLwJZqsq/TvJTRVcy0GX87wn3GXBtGhNp5TvGFUDaCnFzbU4bIQ==}
     peerDependencies:
+      '@codemirror/state': '>=6.0.0'
       '@codemirror/view': '>=6.0.0'
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -1504,10 +1543,12 @@ packages:
       '@codemirror/state': 6.1.2
       '@codemirror/theme-one-dark': 6.1.0
       '@codemirror/view': 6.4.0
-      '@uiw/codemirror-extensions-basic-setup': 4.13.2
+      '@uiw/codemirror-extensions-basic-setup': 4.13.2_taect3vlcl4b4hfcnqjzfij36u
       codemirror: 6.0.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - '@codemirror/lint'
     dev: true
 
   /@vitejs/plugin-react/2.2.0_vite@3.1.8:
@@ -1586,6 +1627,10 @@ packages:
   /ansi-regex/6.0.1:
     resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
     engines: {node: '>=12'}
+    dev: true
+
+  /ansi-sequence-parser/1.1.0:
+    resolution: {integrity: sha512-lEm8mt52to2fT8GhciPCGeCXACSz2UwIN4X2e2LJSnZ5uAbn2/dsYdOmUXq0AtWS5cpAupysIneExOgH0Vd2TQ==}
     dev: true
 
   /ansi-styles/3.2.1:
@@ -1934,7 +1979,7 @@ packages:
   /codemirror-lang-rome-ast/0.0.6:
     resolution: {integrity: sha512-2E4E4rNcj6XxLsVjCZJeOsdEXpfdgiejuLrbq6O4muXzf0KSv5X0ScQrs3LK5LmGwoQUC0AowYbfdj3lsaLWkQ==}
     dependencies:
-      '@codemirror/autocomplete': 6.3.0
+      '@codemirror/autocomplete': 6.3.0_ebfztrivxsawr3nzgdquexqq6q
       '@codemirror/language': 6.3.0
       '@codemirror/state': 6.1.2
       '@codemirror/view': 6.4.0
@@ -1946,7 +1991,7 @@ packages:
   /codemirror/6.0.1:
     resolution: {integrity: sha512-J8j+nZ+CdWmIeFIGXEFbFPtpiYacFMDR8GlHK3IyHQJMCaVRfGx9NT+Hxivv1ckLWPvNdZqndbr/7lVhrf/Svg==}
     dependencies:
-      '@codemirror/autocomplete': 6.3.0
+      '@codemirror/autocomplete': 6.3.0_ebfztrivxsawr3nzgdquexqq6q
       '@codemirror/commands': 6.1.2
       '@codemirror/language': 6.3.0
       '@codemirror/lint': 6.0.0
@@ -3674,7 +3719,7 @@ packages:
   /lang-rome-formatter-ir/0.0.2:
     resolution: {integrity: sha512-Zx7uZ6SA1vmMWkM7UbDZlex8MGOCQNBkxN9sAjeGgGHx69DNuR8E4GPfHFHI2P7oFLvXMrmAMPUY2jbEH9wtOA==}
     dependencies:
-      '@codemirror/autocomplete': 6.3.0
+      '@codemirror/autocomplete': 6.3.0_ebfztrivxsawr3nzgdquexqq6q
       '@codemirror/language': 6.3.0
       '@codemirror/state': 6.1.2
       '@codemirror/view': 6.4.0
@@ -5139,8 +5184,17 @@ packages:
     resolution: {integrity: sha512-EugY9VASFuDqOexOgXR18ZV+TbFrQHeCpEYaXamO+SZlsnT/2LxuLBX25GGtIrwaEVFXUAbUQ601SWE2rMwWHA==}
     dependencies:
       jsonc-parser: 3.2.0
-      vscode-oniguruma: 1.6.2
+      vscode-oniguruma: 1.7.0
       vscode-textmate: 6.0.0
+    dev: true
+
+  /shiki/0.14.2:
+    resolution: {integrity: sha512-ltSZlSLOuSY0M0Y75KA+ieRaZ0Trf5Wl3gutE7jzLuIcWxLp5i/uEnLoQWNvgKXQ5OMpGkJnVMRLAuzjc0LJ2A==}
+    dependencies:
+      ansi-sequence-parser: 1.1.0
+      jsonc-parser: 3.2.0
+      vscode-oniguruma: 1.7.0
+      vscode-textmate: 8.0.0
     dev: true
 
   /signal-exit/3.0.7:
@@ -5747,12 +5801,16 @@ packages:
     resolution: {integrity: sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==}
     dev: true
 
-  /vscode-oniguruma/1.6.2:
-    resolution: {integrity: sha512-KH8+KKov5eS/9WhofZR8M8dMHWN2gTxjMsG4jd04YhpbPR91fUj7rYQ2/XjeHCJWbg7X++ApRIU9NUwM2vTvLA==}
+  /vscode-oniguruma/1.7.0:
+    resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
     dev: true
 
   /vscode-textmate/6.0.0:
     resolution: {integrity: sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==}
+    dev: true
+
+  /vscode-textmate/8.0.0:
+    resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: true
 
   /vscode-uri/2.1.2:
