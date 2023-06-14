@@ -12,7 +12,7 @@ specifiers:
   '@codemirror/view': 6.4.0
   '@docsearch/css': ^3.3.0
   '@docsearch/js': ^3.3.0
-  '@fontsource/inter': ^4.5.14
+  '@fontsource/inter': ^5.0.0
   '@rometools/wasm-web': ../npm/wasm-web
   '@types/mermaid': ^9.1.0
   '@types/node': ^18.11.3
@@ -56,7 +56,7 @@ devDependencies:
   '@codemirror/view': 6.4.0
   '@docsearch/css': 3.3.0
   '@docsearch/js': 3.3.0_gzv7pa6nrbev3fs6gyzn7sadkq
-  '@fontsource/inter': 4.5.14
+  '@fontsource/inter': 5.0.3
   '@rometools/wasm-web': link:../npm/wasm-web
   '@types/mermaid': 9.1.0
   '@types/node': 18.11.9
@@ -1001,8 +1001,8 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource/inter/4.5.14:
-    resolution: {integrity: sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==}
+  /@fontsource/inter/5.0.3:
+    resolution: {integrity: sha512-JJvh5xht71F6e0E5r2+Ffu8g+CYAxMvnGJm9ZMg5IIjy8UwxLp+8C99TgPJupdEyBpEJv0wuMG2Rd183z/bV8g==}
     dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
